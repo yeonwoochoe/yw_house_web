@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* b_02_psuedo.css */
+
+/* 
+선택자 {}
+@기능 () {}
+ --> @media screen and (min-width:320px)
+ --> @support (옵션) {}
+@기능 {}
+ --> @animation 이름 {}
+@기능 "역할"
+ --> @charset "UTF-8";
+ --> @import url("data");
+
+*/
+
+
+li {
+   margin:5px; padding: 10px; 
+   width: 400px; height: auto;
+   background-color: #ddd;
+   }
+
+  .on:hover {background-color:#f3d;}
+  .push:active {background-color: aquamarine;}
+  .link > a:visited {color: darkcyan;}
+  .go > a:link {display:block; width: 100%; height: 100%; background-color: #fff;}
+  .go > a:visited{color:green; background-color: #afd;}
+    
+    .none {display: none;
+        width: 100px; height: 300px; 
+        background-color:#afd;}
+    .on:hover > div{ display:block;}
+    .check > a:focus {outline:0; background-color: #f3d; color: black;}
+
+    
+    
+    .front {font-weight: 700;}
+    .front:before,
+     /* 구형브라우져에서는 보통2번씀 안그럼 에러나서 */
+    .front:before{
+        content: "앞에 추가";
+        color: #f00;
+        display: inline-block; width: 100px; height: 10px;
+        background-color: azure;
+    }
+
+    
+    
+    .back {color: #505; }
+    .back:after,
+    .back:after{ 
+        content: "-뒤에 추가";
+    }
+    
+    
+    .both:before,
+    .both:before {content:
+    "앞에는 빨간색"; color: #f00; font-weight: 900;}
+    
+    .both:after,
+    .both:after {
+        content: "뒤에는 노란색";
+        color: rgb(255, 123, 0); font-style: italic;
+    }
+
+    .first::first-letter {
+        font-size: 2rem; font-weight: bold; color: #f06;}
+    
+    .multi_line::first-line
+     {text-decoration: underline; color:#f77}
+ 
+
+    /* 
+    선택자:hover -> 마우스 올릴 경우
+    선택자:active -> 마우스 클릭
+    선택자:visited -> 방문한 적이 있는 경우
+    선택자:focus -> 초점이 맞는 경우 (a, buttn, input)
+
+    선택자::before {content:;} -> 선택자의 내부 내용 이전에..
+    선택자::after {content:;} -> 선택자의 내부 내용 이전에.. 
+    
+    선택자::first-letter {}
+    선택자::first-line {}
+    
+    */
+
