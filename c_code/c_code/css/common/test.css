@@ -1,0 +1,58 @@
+.header-wrapper{position:fixed;top:0;left:0;width:100%;max-height:106px;padding:30px 0 11px;
+  border-bottom:1px solid #ddd;background:#fff;z-index:99}
+.header-wrapper .unb-wrap{position:absolute;top:0;left:0;width:100%;background:
+  #f3f3f3;border-bottom:1px solid #ddd;}
+.header-wrapper .unb-wrap ul:after{content:"";display:block;clear:both;}
+.header-wrapper .unb-wrap ul li{position:relative;float:left;}
+.header-wrapper .unb-wrap ul li{position:relative;float:left;}
+.header-wrapper .unb-wrap ul li + li{padding-left:10px;margin-left:10px;}
+.header-wrapper .unb-wrap ul li + li:before{content:"";display:block;position:absolut
+  e;top:50%;left:0;width:1px;height:10px;margin-top:-6px;background:#aaa#9b9b9b
+.header-wrapper .unb-wrap ul li a{font-size:11px;line-height:29px;color:#9b9b9b;font-family
+  :"돋움", Dotum,'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', 
+  Helvetica, sans-serif;}
+.header-wrapper .unb-wrap ul li a:hover{text-decoration:underline}
+
+.header-wrapper .header-wrap{padding-top:17px;}
+.header-wrapper .header-wrap h1{position:absolute;top:0;left:0;}
+.header-wrapper .header-wrap h1 .h-logo{display:block;width:65px;height:47px;background:url("/resources/images/common/h_logo.png") no-repeat 0 0;}
+
+.header-wrapper .header-wrap .gnb-wrap{margin-left:147px;}
+.header-wrapper .header-wrap .gnb-wrap:after{content:"";display:block;clear:both;}
+.header-wrapper .header-wrap .gnb-wrap li{float:left;line-height:47px;}
+.header-wrapper .header-wrap .gnb-wrap li + li{margin-left:60px;}
+.header-wrapper .header-wrap .gnb-wrap li a{font-size:20px;color:#333;font-weight:700;transition:all 0.1s}
+.header-wrapper .header-wrap .gnb-wrap li a:hover{color:#81b825;text-decoration:none;}
+.header-wrapper .header-wrap .gnb-wrap li.is-active a{color:#81b825;}
+
+.header-wrapper .header-wrap .nav-mymenu{position:absolute;top:9px;right:0;}
+.header-wrapper .header-wrap .nav-mymenu:after{content:"";display:block;clear:both;}
+.header-wrapper .header-wrap .nav-mymenu li{float:left;}
+.header-wrapper .header-wrap .nav-mymenu li + li{margin-left:30px;}
+.header-wrapper .header-wrap .nav-mymenu li .btn-h-search{display:block;width:30px;height:30px;}
+.header-wrapper .header-wrap .nav-mymenu li .btn-h-wishlist{display:block;width:30px;height:30px;}
+.header-wrapper .header-wrap .nav-mymenu li .btn-h-cart{display:block;width:30px;height:30px;}
+.header-wrapper .header-wrap .nav-mymenu li .btn-h-cart em{display:none;}
+.header-wrapper .header-wrap .nav-mymenu li .btn-h-cart.is-active em{display:block;width:15px;height:18px;margin:0 5px 0 10px;text-align:center;line-height:20px;font-size:11px;color:#fff;}
+
+.header-wrapper .search-wrap{position: absolute; top: 106px; left: 0; right: 0; display: none; height: calc(100vh - 106px); background-color: rgba(0,0,0,0.6);}
+.header-wrapper .search-wrap.is-active{display: block;}
+.header-wrapper .search-wrap .search-inner{ width: 100%; background-color: #fff;}
+.header-wrapper .search-wrap .search-inner .section{position: relative; padding: 47px 0 41px;}
+.header-wrapper .search-wrap .search-ip-box,
+.header-wrapper .search-wrap .recommend-keyword{width: 590px;}
+.header-wrapper .search-wrap .search-inner .section .btn-search-close{position: absolute; top: 24px; right: -5px; display: block; width: 30px; height: 30px;} /*200103 추가*/
+
+.search-ip-box{position: relative; margin: 0 auto; padding-right: 47px; border-bottom: 2px solid #000;}
+.search-ip-box input{width:100%;height: 41px; padding: 8px 0; border: none; font-size: 18px; letter-spacing: -0.45px;}
+.search-ip-box .btn-search{position: absolute; right: 10px; top: 0;}
+.recommend-keyword{margin: 0 auto; margin-top: 14px;}
+.recommend-keyword .keyword-list{font-size: 0;}
+.recommend-keyword .keyword-list:after{content:"";display:block;clear:both}
+.recommend-keyword .keyword-list li{float:left;margin:0 4px 4px 0;vertical-align: top;}
+.recommend-keyword .keyword-list li a{display: block; padding: 4px 8px 4px 9px; border: 1px solid #999; font-size: 13px; color: #777; letter-spacing: -0.325px;}
+.header-wrapper .search-wrap .search-img-box{margin-top: 60px; text-align: center;}
+.header-wrapper .search-wrap .search-img-box .inner{display: flex; flex-direction: column; justify-content: center; width: 590px; height: 120px; margin: 0 auto; padding-top: 3px; background: url(/resources/images/common/h_search.jpg) 0 0 no-repeat;}
+.header-wrapper .search-wrap .search-img-box .inner .search-desc{margin-bottom: 7px; font-size: 26px; font-weight: 500; letter-spacing: -1.3px; color: #291f07;}
+.header-wrapper .search-wrap .search-img-box .inner .search-link{font-size: 14px; font-weight: 500; letter-spacing: -0.7px; color: #8b6000;}
+.header-wrapper .search-wrap .search-img-box .inner .search-link:after{content: ''; display: inline-block; width: 7px; height: 10px; margin-left: 6px; background: url("/resources/images/common/ico_sprite_pc.png") no-repeat -659px -298px;} /* 1912022 수정 */

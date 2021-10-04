@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/c_02_web.css">
+  <script src="../js/common/modernizr-custom.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <div class="head_wrapper">
+        <h1>사이트</h1>
+        <nav class="navigation">
+          <h2 class="blind">네비게이션</h2>
+          <ul>
+            <li>
+              <div class="nav_title"><a href="#">재단소개</a></div>
+              <ul class="nav_list">
+                <li><a href="#">설립취지</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">후원하기</a></div>
+              <ul class="nav_list">
+                <li><a href="#">국내후원</a></li>
+                <li><a href="#">국외후원</a></li>
+                <li><a href="#">맞춤후원</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">자료실</a></div>
+              <ul class="nav_list">
+                <li><a href="#">서식자료실</a></li>
+                <li><a href="#">사진자료실</a></li>
+                <li><a href="#">후원양식</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">스토리</a></div>
+              <ul class="nav_list">
+                <li><a href="#">웹진</a></li>
+                <li><a href="#">보고서</a></li>
+                <li><a href="#">나의 후원</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="viewBox">
+      <h2 class="blind">광고</h2>
+    </section>
+
+    <article id="contentbox">
+      <h2 class="blind">본문내용</h2>
+      <section class="con_area notice_area">
+        <h3>공지사항</h3>
+        <div class="con_part">
+          <ul>
+            <li>공지사항: Lorem ipsum dolor sit.</li>
+            <li>공지사항: Lorem ipsum dolor sit.</li>
+            <li>공지사항: Lorem ipsum dolor sit.</li>
+            <li>공지사항: Lorem ipsum dolor sit.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="con_area gallery_area">
+        <h3>갤러리</h3>
+        <div class="con_part">
+          <ul>
+            <li>gallery_01</li>
+            <li>gallery_02</li>
+            <li>gallery_03</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="con_area commercial_area">
+        <h3 class="blind">commercial</h3>
+      </section>
+    </article>
+
+    <aside id="otherBox"></aside>
+
+    <footer id="footBox">
+      <h2>사이트이름</h2>
+      <address>copyright</address>
+      <div class="family"></div>
+    </footer>
+  </div>
+</body>
+</html>
+
+<!-- 
+  시멘틱구조에서 :
+  웹페이지의 본문의 성격을 띄는 article/section의 형식은
+  내부에 다시 header/article/section/nav/aside/footer...을 가질 수 있다.
+  하지만 header/aside/footer/nav의 특정위치나, 기능의 성향을 가지고있는 요소는 내부에 section/article을 사용할 수 없다.
+  header의 경우는 내부에 nav요소를 가질 수 있다.
+-->

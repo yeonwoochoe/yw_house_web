@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+
+
+.container {float: left; width: 750px;}
+
+#wrap {width: 1000px; height: auto; margin: auto;}
+
+#headBox  {
+float: left;  
+padding: 10px;  
+width: 250px; height: 650px;
+background-color: #777;}
+
+h1 {
+width: 100%; height: 50px;
+margin-bottom: 20px;
+background-color: #fff;}
+
+h1 a {
+display: block; width: 100%; height: 100%;
+text-align: center;
+line-height: 50px}
+
+.navigation {width: 100%; height: auto;}
+.navigation ul {width: 100%; height: auto;}
+.navigation li {
+width: 100%; height: 40px; box-sizing: border-box;
+border: 1px solid #777;}
+
+.navigation dl {width: 100%; height: 100%;}
+.navigation dt {
+width: 100%; height: 100%; 
+padding: 3px; box-sizing: border-box;  
+background-color: #faa;}
+
+.navigation dt a {
+display: block; width: 100%; height: 100%;
+text-align: center; line-height: 36px;} 
+/*a태그가 인라인태그 이기 때문에 블럭요소로 만들지 않으면
+너비를 가질 수 없다. a태그안에 텍스트가 있기 때문에 이것을 정렬해주기
+위하여 위드와 헤이트를 넣어줌으로 텍스트센터를 넣을수있다*/ 
+
+.navigation dd {
+display:none;
+width: 100%; height: auto; min-height: 140px;
+margin-left: 100%;
+transform: translateY(-19.5%);
+background-color: #333;}
+
+.navigation li:hover dd {display: block;}
+.navigation li:hover dt {
+    background-color: #333; color: #fff;
+}
+
+
+.navigation dd a {
+display: block; width: 100%; height: auto;
+margin-bottom: 10px;
+color: #fff; font-weight: 700;
+padding: 10px; box-sizing: border-box;
+background-color: #333;}
+    
+.navigation dd a:hover {
+color:#333;
+background-color: #fff;
+}  
+
+.navigation dd a:focus {color: #f06;
+    font-size: 1.1rem; background-color: #ddd;}
+
+
+
+
+/* #headBox ------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+#viewBox {
+height: 350px;
+background-color: #ddd;}
+/* #viewBox------------------------------------------------- */
+
+
+#contentBox {
+height: 200px;}
+
+
+.notice_gallery {
+float: left; width: 65%; height: 100%;
+padding: 10px;
+background-color: #ccc;   
+}
+
+.notice_gallery dl {
+    position: relative;
+    width: 100%; height: 100%;
+background-color: #eee;}
+.notice_gallery dt {
+float: left;    
+width: 45%; height: 25px;
+background-color: #fd0;}
+.notice_gallery dd {display: none;
+border: 1px solid #333;}
+
+.notice_gallery dt:last-of-type {border: 0;}
+
+.notice_gallery dd 
+{display: none;
+position:absolute;
+left: 0; top:25px;
+width: 100%; height: calc(100% - 25px);}
+dd.notice {background-color: #aff;}
+dd.gallery {background-color: #faa;}
+
+dt.action + dd {display: block;}
+
+
+.location_link {    float: left;
+width: 35%; height: 100%;
+padding: 20px;
+background-color: #fff;  }
+
+
+.location_link > button
+{width: 100%; height: 100%;
+background-color: #575757; color: #fff;}
+
+
+
+.modal_area {position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto; z-index: 1500;}
+
+.modal_message {
+    position: absolute; 
+    top:0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 700px; height: 400px;
+    padding: 10px;
+border: 1px solid #333;
+background-color: #fff;
+border-radius: 0.3rem;
+box-shadow: 5px 5px 5px rgba(51,51,51,0.9);}
+
+
+.modal_message .close {
+position:absolute;
+right: 0; bottom: 0;
+padding: 10px;}
+
+
+
+.modal_message .close button {width: 100px; height: 40px;
+border-radius: 0.3rem; background-color: #ccc;
+box-shadow: 3px 3px 3px rgba(0,0,0,0.5);}
+
+
+.modal_bg {
+    width: 100%; height: 100%;
+    background-color: rgba(51,51,51,0.7);
+}
+
+
+
+/* #contentBox------------------------------------------------- */
+
+
+
+
+
+
+#footBox {
+height: 100px;
+background-color: #eee;}
+/* #footBox------------------------------------------------- */

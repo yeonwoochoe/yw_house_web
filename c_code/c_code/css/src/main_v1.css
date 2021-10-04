@@ -1,0 +1,466 @@
+@charset "UTF-8";
+/* main_v1.css */
+body {
+  --color-gray1:#c4c4c4;
+  --color-sample1:rgba(20, 100,255,0.15);
+}
+
+/* main_common.css */
+/* design */
+#wrap {
+  width: 1440px; height:auto; padding-top: 100px;}
+
+
+ /* #headBox */
+
+
+  .head_wrapper {position:fixed;top:0;left:0;
+    width:100%;border-bottom:1px solid #ddd; z-index:1000}
+  
+  .midheader_wrap {width: 1440px; height: 100px; margin: auto;
+  }
+
+
+    #headBox{width: 100%; height: 100px;
+    position:relative;
+    padding-top: 50px;
+    box-sizing: content-box; /* headBox 상단의 공간을 만들기위해 */
+}
+
+    #mid_header {width: 100%; height: 100px;
+      padding: 20px 40px 20px 60px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255,2555,0.5);}
+
+    h1 {
+      float: left;
+      width: 193px; height: 64px;
+      background-color: rgb(153, 138, 138);}
+
+    .mid_navigation {
+      float: left;
+      margin: 30px 20px 0px 300px ;
+      width: 450px; height: 30px; 
+    }
+    
+    .mid_navigation > .gnb {width: 100%; height: 100%; 
+    } 
+  
+      .gnb li{
+        float:left;
+        margin-left: 20px;
+        
+        box-sizing: border-box;
+        color: #000000;
+        text-align: center;}
+  
+
+      .serch_infobox input {
+        float: right;
+        width: 300px; height: 40px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: #ddf; }
+  
+  
+    /* top_navigation -------------------------*/
+
+    .top_nav_wrap {
+      position: relative; margin: 0 auto;
+      width: 1440px; height:auto; }
+
+      #top_navigation {
+        /* 내용을 강제로 상단으로 끌어올림 ^^ 요롷게요~~ */
+        position:absolute; top: 0; left:0; 
+        width: 100%; height: 50px;
+        padding: 10px 70px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd;
+        background-color: rgb(226, 226, 226);}
+      
+      .support_unb {
+        float: left;
+        width: 430px; height: 30px;}
+
+      .support_area 
+      {width: 100%; height: 100%;}
+
+      .support_area li{
+        float: left;
+        width: auto; height: 100%;
+        margin-right: 20px;
+        line-height: 30px;
+        box-sizing: border-box;
+        text-align: center;}
+
+
+      .user_unb {
+        float:right;
+        width: 310px; height: 30px;}
+  
+      .user_area {width: 100%; height: 100%;}
+  
+      .user_area li{
+        width: auto; height: 100%;
+        line-height: 30px;
+        float:left;
+        margin-left: 20px;
+        box-sizing: border-box;
+        text-align: center;}
+
+
+
+
+
+/* #viewBox -----------------------------------*/
+  #viewBox{position: relative;
+  width: 100%; height: 640px;
+  margin-top: -50px;
+  background-color:#eee; overflow: hidden;}
+
+  #viewBox img {position: relative;
+    left: 50%; margin-left: -990px;
+    width: 1980px; height: 100%;}
+
+  .view_btn {position: absolute;
+    top: 50%; left:0; z-index: 1000;
+    width: 100%; height: auto;}
+
+    .view_btn button {
+      float:left;
+      width: 50px; height: 50px;
+      background-color: #fff;}
+    
+  .view_btn .next {float: right; }
+
+  
+
+
+  /* .button {width: 40px; height: 40px; background-color: #fff;}
+
+  .viewbtn .next {float:right}
+  .viewbtn .prev {float:left}
+ * 통상 쓰는 방식은 아님/
+
+
+
+
+
+/* #serchPdBox -----------------------------------*/
+#serchPdBox{width: 100%; height: 600px;
+  background-color:#333;}
+
+
+  .serch_pd_wrap {
+  position: relative;
+  top:-130px; z-index: 500;
+  padding: 100px 90px;
+  width: 1074px; height: 450px; margin: auto;
+  background-color: #fff;}
+
+
+  .serch_conbox {
+    float: left;
+    width: 180px; height: 240px;
+    padding: 0; margin-right: 58px;
+    background-color: #fff;}
+
+   .serch_conbox:last-child {margin-right: 0;}
+
+.serch_conbox > .thumbnail {
+  float: left; 
+  width: 100%; height: 190px;}
+
+  .serch_thumbnail img {
+    float: left;
+    border-radius: 10%;
+    width: 100%; height: 100%;}
+
+  .serch_description { float: left;
+    width: 100%; height: 140px
+  }
+
+ .serch_description p { padding-top: 20px;
+      font-size: 1.5em; text-align: center;}
+
+
+
+
+
+
+
+
+
+/* #bestPdBox-------------------------------------- */
+  #bestPdBox{width: 100%; height: 1000px;
+  background-color:#333;}
+    
+  .bset_pd_wrap {width: 1300px; height: 360px;
+    margin: 200px auto;
+  background-color: #333;}
+
+  #bestPdBox hgroup {width: 100%; height: auto;}
+  #bestPdBox .icon {width: 30px; height: 30px; margin: auto; margin-bottom: 10px; background-color: #fff;}
+  #bestPdBox h2 { text-align: center; color:#fff; font-size:2.5rem;}
+  #bestPdBox h2 i {
+    display: block;  /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
+    width: 40px; height: 40px; margin: auto;
+    background-color: #fff;
+    background-image: url("../../img/best-pd-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  #bestPdBox h3 { text-align: center; color:#fff; font-size:2rem;}
+
+    .best_conbox {
+      float: left;
+      width: 300px; height: 360px;
+      padding: 10px; margin-right: 33px;
+      background-color: #fff;}
+
+    .best_conbox:last-child {margin-right: 0;}
+
+  .best_conbox > .thumbnail {
+    float: left;
+    width: 100%; height: 200px;}
+
+    .thumbnail img {
+      float: left;
+      width: 100%; height: 100%;}
+
+    .description { float: left;
+      width: 100%; height: 140px
+    }
+
+   .description p { padding-top: 10px;
+        font-size: 1.5em;}
+
+
+
+
+ 
+
+
+
+
+
+/* #brandAboutBox---------------------------------------- */
+  #brandAboutBox{width: 100%; height: 760px;
+  background-color:#ddd;}
+
+
+ .brand_wrap {
+    width: 1140px; height: 576px;
+    margin: 90px auto;
+    background-color: #444;}
+
+.tab_title_area {
+  /* float: left; */
+  width: 100%; height: 72px;
+  background-color: #ddd;}
+
+
+.tab_title_area > ul {
+  width: 100%; height: 100%;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.tab_title_area li {
+    float: left;
+    width: 380px; height: 100%;
+    box-sizing: border-box; padding: 0 20px;
+    background-color: #fff;
+    text-align: center; line-height: 72px;}
+
+
+.tab_title_area li.action {border-bottom: 7px solid #567e00;}
+
+.tab_title_area button {
+  width: 100%; height: 100%;
+  font-size: 1.25rem;
+  font-weight: 700;}
+
+
+.tab_content_area {width: 100%; height: 100%;}
+
+.tab_content_area > div.action {display: block;}
+
+  .tab_con_detail_01 {
+    display: none;
+    width: 100%; height: 100%;
+    background-color: #70A103;}
+  
+  .tab_con_detail_02 {
+    display: none;
+    width: 100%; height: 100%;
+    background-color: #040;}
+  
+  .tab_con_detail_03 {
+    display: none;
+    width: 100%; height: 100%;
+    background-color: #040;}
+  
+  
+
+
+
+
+
+
+
+
+ /* #rivewPdBox-----------------------------------------------------  */
+  #rivewPdBox{width: 100%; height: 1000px;
+  background-color:#777;}
+
+
+
+  .revew_pd_wrap {width: 1300px; height: 420px;
+    margin: 400px auto;}
+
+  .revew_conbox {
+    position: relative;
+    margin-right: 32px;
+    float: left;
+    width: 300px; height: 100%;}
+
+  .revew_conbox:last-child {margin-right: 0;}
+
+    .revew_conbox img {
+      float: left;
+      width: 100%; height: 100%;}
+  
+
+  .revew_conbox a {
+    position: absolute;
+    bottom: 50px; left:50%;
+    margin-left: -100px;
+    z-index: 500;
+    width: 200px; height: 60px;
+    color: #fff; font-weight: 400;
+    text-align: center; line-height: 60px;
+    background-color: #70A103;
+  }
+
+
+
+
+
+
+
+/* #infoBox------------------------------------------------------ */
+  #infoBox{width: 100%; height: 623px;
+  padding: 160px 90px;
+  background-color:#eee;} 
+
+
+  .info_content_area_01 {
+    float: left;
+    margin-right: 39px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 650px; height: 300px;}
+
+    .cs_center { float: left;
+      margin-right: 28px;
+      width: 300px; height: 100%;
+    background-color: #fff;}
+
+    .back_account {float: left;
+      width: 322px; height: 100%;
+      background-color: #dd0;}
+
+
+
+
+
+  .info_content_area_02 {
+    float: left;
+    position: relative;
+    padding: 30px;
+    margin-right: 10px;
+    width: 277px; height: 300px;
+    border: 1px solid #ddd;
+    background-color: #fff;}
+
+  .info_btn {
+  position: absolute; bottom:20px;
+  width: 160px; height: 43px;
+  color: #fff; font-size: 0.85rem;
+  background-color: #333;
+  text-align: center; line-height: 43px;}
+
+    .notice {
+      font-size: 1.5rem;
+      font-weight: 400;}
+
+    .info_content_area_02 li
+    { position: relative;
+      margin: 5px 0 0 30px;
+      font-size: 1rem;
+   }
+
+   .info_content_area_02 li:nth-child(1) {margin-top: 20px;}
+
+
+
+
+
+    
+  .info_content_area_03 {
+    float: left;
+    position: relative;
+    padding: 30px;
+    width: 277px; height: 300px; 
+    border: 1px solid #ddd;
+    background-color: #fff;}
+
+
+    .faq {
+      font-size: 1.5rem;
+      font-weight: 400;}
+
+    .info_content_area_03 li
+    { position: relative;
+      margin: 5px 0 0 30px;
+      font-size: 1rem;
+   }
+
+   .info_content_area_03 li:nth-child(1) {margin-top: 20px;}
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+  /* #footBox---------------------------------------------- */
+  #footBox{width: 100%; height: 340px;
+  background-color:#444;}
+
+  address {width: 100%; height: 100%;
+    color: #fff;
+  }
+
+
+
+  /* 1. #headBox 
+  ==================================================== */
+  
+  /* --------------------------------------------------- */
+  /*  */
+  /**
+   * ? 내용을 설명
+   * ! 내용을 설명
+   * TODO: 내용을 설명
+  */
