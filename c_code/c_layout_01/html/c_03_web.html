@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/c_03_web.css">
-
   <script src="../js/common/modernizr-custom.js"></script>
   <title>웹기초-풀이</title>
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
@@ -17,127 +16,117 @@
 </head>
 <body>
   <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="./a_content.html">웹</a></h1>
+      <nav class="navigation">
+        <h2 class="blind">네비게이션</h2>
 
-<div id="wrap">
+        <!-- ul>li*4>dl>dt{제목_$$}+dd>a*4[href=#]{sub_title_$$} -->
 
-<header id="headBox">
-<h1><a href="#">사이트</a></h1>
-    <nav class="navigation">
-            <h2 class="blind">네비게이션</h2>
-    
+        <!-- dl>dt+dd+dt+dd+dt+dd  -->
+        
         <ul>
-            <li>
-                <dl>
-                    <dt><a href="#">제목_01</a></dt>
-                    <dd>
-                        <a href="#">sub_title_01</a>
-                        <a href="#">sub_title_02</a>
-                        <a href="#">sub_title_03</a>
-                        <a href="#">sub_title_04</a>
-                    </dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt><a href="#">제목_02</a></dt>
-                    <dd>
-                        <a href="#">sub_title_01</a>
-                        <a href="#">sub_title_02</a>
-                        <a href="#">sub_title_03</a>
-                        <a href="#">sub_title_04</a>
-                    </dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt><a href="#">제목_03</a></dt>
-                    <dd>
-                        <a href="#">sub_title_01</a>
-                        <a href="#">sub_title_02</a>
-                        <a href="#">sub_title_03</a>
-                        <a href="#">sub_title_04</a>
-                    </dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt><a href="#">제목_04</a></dt>
-                    <dd>
-                        <a href="#">sub_title_01</a>
-                        <a href="#">sub_title_02</a>
-                        <a href="#">sub_title_03</a>
-                        <a href="#">sub_title_04</a>
-                    </dd>
-                </dl>
-            </li>
+          <li>
+            <dl>
+              <dt><a href="#">제목_01</a></dt>
+              <dd>
+                <a href="#">sub_title_01</a>
+                <a href="#">sub_title_02</a>
+                <a href="#">sub_title_03</a>
+                <a href="#">sub_title_04</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#">제목_02</a></dt>
+              <dd>
+                <a href="#">sub_title_01</a>
+                <a href="#">sub_title_02</a>
+                <a href="#">sub_title_03</a>
+                <a href="#">sub_title_04</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#">제목_03</a></dt>
+              <dd>
+                <a href="#">sub_title_01</a>
+                <a href="#">sub_title_02</a>
+                <a href="#">sub_title_03</a>
+                <a href="#">sub_title_04</a>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><a href="#">제목_04</a></dt>
+              <dd>
+                <a href="#">sub_title_01</a>
+                <a href="#">sub_title_02</a>
+                <a href="#">sub_title_03</a>
+                <a href="#">sub_title_04</a>
+              </dd>
+            </dl>
+          </li>
         </ul>
-            
-        
-    </nav>
-        
-        
-    </header>
-        <!--headBox-->
-    
-    
-    
-    
-    
-    
+
+      </nav>
+    </header> <!-- // #headBox-->
+
     <section class="container" id="viewBox">
-        <h2 class="blind">이미지슬라이드</h2>
-        
-    </section><!--viewBox-->
-    
-    
-    <article class="container" id="contentBox">
-        <h2 class="blind">본문내용</h2>
-            <div class="notice_gallery">
-                <h3 class="blind">공지사항 및 갤러리</h3>
-                <dl>
-                    <dt class="notice action">공지사항</dt>
-                    <dd class="notice">공지사항 내용</dd>
-                     
-                    <dt class="gallery">갤러리</dt>
-                    <dd class="gallery">갤러리내용</dd>
-                
-                </dl>
-       
-        </div>
+      <h2>이미지 슬라이드</h2>
+    </section> <!-- // #viewBox-->
 
-        <div class="location_link"> 
-            <h3 class="blind">바로가기</h3>
-            <button type="button">
-                모달바로가기
-            </button>
+    <article class="container" id="conBox">
+      <h2 class="blind">본문 내용</h2>
+      <div class="notice_gallery">
+        <h3 class="blind">공지사항 및 갤러리</h3>
+        <dl>
+          <dt class="notice">공지사항</dt>
+          <dd class="notice">공지사항 내용</dd>
 
-            <div class="modal_area" hidden>
-                <div class="modal_message">
-                    <h4>바로가기 제목</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quae illo odit rerum soluta! Quaerat esse iste facilis amet ipsum ea!</p>
-                    <div class="close">
-                        <button type="button">닫기</button>
-                    </div>
-                </div>
-                <div class="modal_bg"></div>
+          <dt class="gallery action">갤러리</dt>
+          <dd class="gallery">갤러리 내용</dd>
+        </dl>
+      </div>
+      <div class="location_link">
+        <h3 class="blind">바로가기</h3>
+
+        <button type="button">
+          모달 바로가기
+        </button>
+
+        <div class="modal_area">
+          <div class="modal_message">
+            <h4>바로가기 기능 제목</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dicta minima quos vel distinctio ducimus deserunt eveniet qui necessitatibus quas.</p>
+            <div class="close">
+              <button type="button">닫기</button>
             </div>
+          </div>
+          <div class="modal_bg">  </div>
         </div>
-    </article>
-        <!-- contentBox-->
-    
-    
-    
-    
+
+      </div>
+    </article> <!-- // #conBox-->
+
     <footer class="container" id="footBox">
-        
-    </footer>
-        <!-- footBox-->
 
+    </footer> <!-- // #footBox-->
+  </div>
 
-
-  </div><!-- wrap -->
   <!-- script -->
-  <script></script>
+  <script>
+    const modalArea = document.querySelector('.modal_area');
+    const closeBtn = document.querySelector('.close');
+
+    closeBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      modalArea.style.display = "none";
+    });
+  </script>
 </body>
 </html>
