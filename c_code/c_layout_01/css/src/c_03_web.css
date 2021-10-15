@@ -10,8 +10,7 @@
 /* #headBox 
 ============================== */
 #headBox{
-  position:relative; z-index:1000; float:left; width:250px; height:650px;
-   box-sizing: border-box; padding:10px;
+  position:relative; z-index:1000; float:left; width:250px; height:650px; box-sizing: border-box; padding:10px;
   background-color: #fdf;} 
 h1 { width: 100%; height:50px; margin-bottom: 20px; background-color: #999;}
 h1 a { display: block; width: 100%; height: 100%;}
