@@ -1,0 +1,11 @@
+
+{체크된 아이콘}
+.bg-001_checked {
+    width: 32px; height: 32px;
+    background: url('check_icon') -6px -6px;
+
+{체크된 아이콘}
+.bg-002_check {
+    width: 32px; height: 32px;
+    background: url('check_icon') -6px -50px;
+}
