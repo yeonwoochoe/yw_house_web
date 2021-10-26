@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!-- main_v1.html -->
+<html lang="ko-KR" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css를 불러오는 순서 : font/icon -> reset -> common.css -> design.css -->
+    <!-- font:구글폰트-noto-sans-kr -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../fonts/fontAwesome/css/all.css" />
+    <link rel="stylesheet" href="../css/common/reset.css" />
+    <link rel="stylesheet" href="../css/common/common.css" />
+    <link rel="stylesheet" href="../css/src/sub_pd-list.css" />
+
+    <script src="../js/common/modernizr-custom.js"></script>
+
+    <title>포르미</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../favicon.png" />
+  </head>
+  <body>
+    <!-- layout -->
+    <div id="wrap">
+      <div class="head_wrapper">
+        <header id="headBox">
+          <div class="midheader_wrap">
+            <div id="mid_header">
+              <h1><a href="../html/main_v1.html">포르미</a></h1>
+              <div class="mid_navigation">
+                <ul class="gnb">
+                  <li><a href="../html/sub_pd-list.html">더포르미</a></li>
+                  <li><a href="#">반칙도시락</a></li>
+                  <li><a href="#">인생도시락</a></li>
+                  <li><a href="#">신애한끼</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">리얼스토리</a></li>
+                </ul>
+              </div>
+              <!-- midheader_wrap -->
+              <div class="search_form_box">
+                <form action="#" method="GET" class="shop_search">
+                  <fieldset>
+                    <legend class="blind">상품 검색창</legend>
+                    <span class="sch_inner_wrap">
+                      <input type="text" id="searchIn" name="search__In" value="" placeholder="검색어를 입력하세요" />
+                    </span>
+                    <label for="searchIn"></label>
+                    <button  type="submit" class="sch_inner_btn_wrap">
+                    <span class="blind">검색</span>
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+
+              <!--실제로는 이런 구성을-->
+              <!-- <div class="search_demo">
+            <form action="연결할문서 #" method="GET" class="shop_search">
+              <fieldset>
+                <legend>검색제목</legend>
+                <label for="search" class="blind"> 검색어를 입력하세요</label>
+                <input type="text" id="search"  value="" placeholder="검색어를 입력하세요">
+                <button>상품 검색창</button>
+              </fieldset>
+            </form>
+          </div> -->
+            </div>
+            <!-- mid_header -->
+          </div>
+          <!-- midheader_wrap -->
+          <div id="top_navigation">
+            <div class="top_nav_wrap clearfix">
+              <h2 class="blind">top_navigation</h2>
+              <div class="support_unb">
+                <ul class="support_area">
+                  <li><a href="#">즐겨찾기</a></li>
+                  <li><a href="#">파트너회원 신청</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">포토리뷰</a></li>
+                  <li><a href="#">sns</a></li>
+                </ul>
+              </div>
+              <div class="user_nav">
+                <ul class="user_area">
+                  <li><a href="./sub_login.html">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">장바구니</a></li>
+                  <li><a href="#">고객센터</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--top_nav_wrap-->
+        </header>
+        <!-- headBox-->
+      </div>
+      <!-- head_wrapper-->
+
+      <section id="viewBox">
+        <h2 class="blind">viewBox</h2>
+        <div class="slide_wrapper">
+          <div class="view_area">
+            <div class="view_title">
+              <h3><span>DAILY HEALTHY MEAL</span>더포르미</h3>
+              <h4>맛있는 가벼움, 5가지 건강한 잡곡 데일리 간편도시락 더포르미</h4>
+              <p>압력밥솥으로 짓는 잡곡밥, 수제반찬으로 언제 어디서나 속 편한 한끼!<br/>
+                다양한 12종 구성으로 남녀노소 일반식으로 적합한 도시락입니다.</p>
+            </div>      
+          </div>
+        </div>
+
+      </section>
+      <!-- viewBox-->
+
+
+      <section id="mainPdBox">
+        <div class="main_pd_title">
+          <!-- <div class="icon"></div> -->
+          <h2>
+            더포르미 제품보기
+          </h2>
+
+          <div class="tab_title_area">
+            <ul>
+              <li>
+                <h3 class="blind">1주식단</h3>
+                <button type="button">1주식단</button>
+              </li>
+              <li class="action">
+                <h3 class="blind">2주식단</h3>
+                <button type="button">2주식단</button>
+              </li>
+              <li>
+                <h3 class="blind">다양한 구성</h3>
+                <button type="button">다양한구성</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab_content_area">
+            <div class="tab_con_detail_01"></div>
+            <div class="tab_con_detail_02 action"></div>
+            <div class="tab_con_detail_03"></div>
+          </div>
+        </div>
+
+
+
+        <div class="main_pd_wrap">
+          <div class="main_conbox">
+            <h4 class="blind">main_product_name</h4>
+            <div class="thumbnail">
+              <div class="shop_bag_icon">
+                <img src="../img/shopping-bag.svg" alt="장바구니 담기">
+              </div>
+              <img src="../img/main-pd-1.jpg" alt="main-product" />
+            </div>
+            <div class="description">
+              <div class="main_pd_name">
+                <a href="#">[포르미] 더포르미</a>
+                <p class="sub_text">&#35;1주식단 &#35;인기세트 &#35;흑현미3종 &#35;귀리3종 </p>
+              </div>
+              <div class="main_pd_price">
+                <span class="main_pd_p_dc">
+                <span class="blind">할인가</span>
+                24,500원
+              </span>
+              <span class="main_pd_per_price">
+                <span class="blind">정가</span>
+               30,500원
+              </span>
+              <span class="main_pd_sale_price">
+                <span class="blind">할인률</span>
+               20&#37;
+              </span>
+
+              </div>
+            </div>
+          </div>
+        
+          <div class="main_conbox">
+            <h4 class="blind">main_product_name</h4>
+            <div class="thumbnail">
+              <div class="shop_bag_icon">
+                <img src="../img/shopping-bag.svg" alt="장바구니 담기">
+              </div>
+              <img src="../img/main-pd-1.jpg" alt="main-product" />
+            </div>
+            <div class="description">
+              <div class="main_pd_name">
+                <a href="#">[포르미] 더포르미</a>
+                <p class="sub_text">&#35;1주식단 &#35;인기세트 &#35;흑현미3종 &#35;귀리3종 </p>
+              </div>
+              <div class="main_pd_price">
+                <span class="main_pd_p_dc">
+                <span class="blind">할인가</span>
+                24,500원
+              </span>
+              <span class="main_pd_per_price">
+                <span class="blind">정가</span>
+               30,500원
+              </span>
+              <span class="main_pd_sale_price">
+                <span class="blind">할인률</span>
+               20&#37;
+              </span>
+
+              </div>
+            </div>
+          </div>
+
+ 
+          <div class="main_conbox">
+            <h4 class="blind">main_product_name</h4>
+            <div class="thumbnail">
+              <div class="shop_bag_icon">
+                <img src="../img/shopping-bag.svg" alt="장바구니 담기">
+              </div>
+              <img src="../img/main-pd-1.jpg" alt="main-product" />
+            </div>
+            <div class="description">
+              <div class="main_pd_name">
+                <a href="#">[포르미] 더포르미</a>
+                <p class="sub_text">&#35;1주식단 &#35;인기세트 &#35;흑현미3종 &#35;귀리3종 </p>
+              </div>
+              <div class="main_pd_price">
+                <span class="main_pd_p_dc">
+                <span class="blind">할인가</span>
+                24,500원
+              </span>
+              <span class="main_pd_per_price">
+                <span class="blind">정가</span>
+               30,500원
+              </span>
+              <span class="main_pd_sale_price">
+                <span class="blind">할인률</span>
+               20&#37;
+              </span>
+
+              </div>
+            </div>
+          </div>          
+
+
+
+        </div>
+
+        <div class="main_pd_wrap second">
+
+
+          <div class="main_conbox">
+            <h4 class="blind">main_product_name</h4>
+            <div class="thumbnail">
+              <div class="shop_bag_icon">
+                <img src="../img/shopping-bag.svg" alt="장바구니 담기">
+              </div>
+              <img src="../img/main-pd-1.jpg" alt="main-product" />
+            </div>
+            <div class="description">
+              <div class="main_pd_name">
+                <a href="#">[포르미] 더포르미 시즌2</a>
+                <p class="sub_text">&#35;1주식단 &#35;인기세트 &#35;흑현미3종 &#35;귀리3종 </p>
+              </div>
+              <div class="main_pd_price">
+                <span class="main_pd_p_dc">
+                <span class="blind">할인가</span>
+                24,500원
+              </span>
+              <span class="main_pd_per_price">
+                <span class="blind">정가</span>
+               30,500원
+              </span>
+              <span class="main_pd_sale_price">
+                <span class="blind">할인률</span>
+               20&#37;
+              </span>
+
+              </div>
+            </div>
+          </div>
+        
+          <div class="main_conbox">
+            <h4 class="blind">main_product_name</h4>
+            <div class="thumbnail">
+              <div class="shop_bag_icon">
+                <img src="../img/shopping-bag.svg" alt="장바구니 담기">
+              </div>
+              <img src="../img/main-pd-1.jpg" alt="main-product" />
+            </div>
+            <div class="description">
+              <div class="main_pd_name">
+                <a href="#">[포르미] 더포르미 시즌2</a>
+                <p class="sub_text">&#35;1주식단 &#35;인기세트 &#35;흑현미3종 &#35;귀리3종 </p>
+              </div>
+              <div class="main_pd_price">
+                <span class="main_pd_p_dc">
+                <span class="blind">할인가</span>
+                24,500원
+              </span>
+              <span class="main_pd_per_price">
+                <span class="blind">정가</span>
+               30,500원
+              </span>
+              <span class="main_pd_sale_price">
+                <span class="blind">할인률</span>
+               20&#37;
+              </span>
+
+              </div>
+            </div>
+          </div>
+
+ 
+          <div class="main_conbox">
+            <h4 class="blind">main_product_name</h4>
+            <div class="thumbnail">
+              <div class="shop_bag_icon">
+                <img src="../img/shopping-bag.svg" alt="장바구니 담기">
+              </div>
+              <img src="../img/main-pd-1.jpg" alt="main-product" />
+            </div>
+            <div class="description">
+              <div class="main_pd_name">
+                <a href="#">[포르미] 더포르미 시즌2</a>
+                <p class="sub_text">&#35;1주식단 &#35;인기세트 &#35;흑현미3종 &#35;귀리3종 </p>
+              </div>
+              <div class="main_pd_price">
+                <span class="main_pd_p_dc">
+                <span class="blind">할인가</span>
+                24,500원
+              </span>
+              <span class="main_pd_per_price">
+                <span class="blind">정가</span>
+               30,500원
+              </span>
+              <span class="main_pd_sale_price">
+                <span class="blind">할인률</span>
+               20&#37;
+              </span>
+
+              </div>
+            </div>
+          </div>          
+
+
+
+
+
+
+
+
+
+          
+
+          
+        </div>
+
+        <div class="pd_btn_wrap">
+
+          <button type="button" class="next">
+          </button>
+          <button type="button" class="prev">
+          </button>
+          <ul class="page_counut ">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+
+        </div>
+
+        <!-- main_pd_wrap-->
+      </section>
+      <!-- mainPdBox-->
+
+
+
+
+
+      <article id="infoBox">
+        <h2 class="blind">infoBox</h2>
+        <div class="info_content_area_01">
+          <div class="cs_center">
+            <h3>customer center</h3>
+            <em class="cs_number">1111-1111</em>
+            <div class="all_sub time">
+            <p><em>평일</em> 오전 10:00 ~ 오후 05:00</p>
+            <p><em>점심</em> 오후 12:30 ~ 오후 01:30</p>
+            <p>주말 &#183;&#09;공휴일&#09;<em>휴무</em></p>
+          </div>
+          </div>
+          <div class="bank_account">
+            <h3>bank account</h3>
+            <em class="bank_forme">(주)포미다이어트</em>
+            <div class="all_sub bank">
+            <p>
+              <span class="blind">은행명</span>
+              <span class="theme2 account">신한은행</span>
+            </p>
+            <p>
+              <span class="blind">계좌번호</span>
+              <span class="theme2 number">1111-111-11111</span>
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info_content_area_02" tabindex="1" autofocus>
+          <h3 class="notice">공지사항</h3>
+          <ul class="borderline info_con_part">
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+          </ul>
+          <div class="info_btn"><a href="#">자세히 보기</a></div>
+        </div>
+        <div class="info_content_area_03">
+          <h3 class="faq">자주하는질문</h3>
+          <ul class="borderline info_con_part">
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </li>
+          </ul>
+          <div class="info_btn"><a href="#">자세히 보기</a></div>
+        </div>
+      </article>
+      <!-- infoBox-->
+
+      <footer id="footBox">
+        <h2 class="blind">footBox</h2>
+        <div class="footbox_wrapper">
+          <div class="footbox_area_01">
+            <address>
+              <p>
+                COMPANY (주)포미다이어트 OWNER 정원철 BUSINESS LICENSE
+                624-87-01238 ONLINE-LICENSE 제2019-인천서구-0780호
+              </p>
+              <p>
+                ADDRESS 22841 인천광역시 서구 장고개로 125, 파란들테크노텔 3F
+                (주)포미다이어트
+              </p>
+              <p>개인정보취급담당자 최연우</p>
+            </address>
+          </div>
+          <div class="footbox_area_02">
+            <div class="membership_btn">
+              <a href="#"
+                >파트너회원은 10% 할인혜택<span>partner membership</span></a
+              >
+            </div>
+
+            <div class="sns_btn">
+              <ul>
+                <li><a href="#">sns</a></li>
+                <li><a href="#">sns</a></li>
+                <li><a href="#">sns</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footbox_area_03">
+            <div class="foot_info">
+              <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footBox-->
+    </div>
+    <!-- wrap -->
+
+    <!-- script -->
+    <script></script>
+  </body>
+</html>

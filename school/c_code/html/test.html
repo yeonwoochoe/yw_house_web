@@ -1,0 +1,229 @@
+<div class="header_search">
+  <div class="header_search_cont">
+    <!-- 검색 폼 -->
+    <div class="top_search">
+      <form
+        name="frmSearchTop"
+        id="frmSearchTop"
+        action="../goods/goods_search.php"
+        method="get"
+        novalidate="novalidate"
+      >
+        <fieldset>
+          <legend>검색폼</legend>
+          <div class="top_search_cont">
+            <div class="top_text_cont">
+              <input
+                type="text"
+                id="search_form"
+                name="keyword"
+                class="top_srarch_text"
+                title=""
+                placeholder=""
+                autocomplete="off"
+              />
+              <input
+                type="image"
+                src="/data/skin/front/kaimen_pc_n/img/main/sch_btn.png"
+                id="btnSearchTop"
+                class="btn_top_srarch"
+                title="검색"
+                value="검색"
+                alt="검색"
+              />
+            </div>
+            <!-- //top_text_cont -->
+            <div class="search_cont" style="display: none">
+              <input type="hidden" name="recentCount" value="5" />
+
+              <script type="text/javascript">
+                $(function () {
+                  /* 상단 검색 */
+                  $('.top_search_cont input[name="keyword"]').on({
+                    focus: function () {
+                      $(this).parents().find(".search_cont").show();
+                    },
+                    blur: function () {
+                      $("body").click(function (e) {
+                        if (
+                          !$(".search_cont").has(e.target).length &&
+                          e.target.name != "keyword"
+                        ) {
+                          $(this).parents().find(".search_cont").hide();
+                        }
+                      });
+                      $(".btn_top_search_close").click(function () {
+                        $(this).parents().find(".search_cont").hide();
+                      });
+                    },
+                  });
+
+                  if ($("input[name=recentCount]").val() > 0) {
+                    $(".js_recom_box")
+                      .removeClass("recom_box_only")
+                      .addClass("recom_box");
+                  } else {
+                    $(".js_recom_box")
+                      .removeClass("recom_box")
+                      .addClass("recom_box_only");
+                  }
+                });
+              </script>
+              <div class="js_recom_box recom_box" style="display: none">
+                <dl>
+                  <dt>추천상품</dt>
+                  <dd>
+                    <div class="recom_item_cont">
+                      <!-- //recom_icon_box -->
+                      <div class="recom_tit_box">
+                        <a href="../goods/goods_view.php?goodsNo="> </a>
+                      </div>
+                      <!-- //recom_tit_box -->
+                      <div class="recom_money_box"></div>
+                      <!-- //recom_money_box -->
+                      <div class="recom_number_box"></div>
+                      <!-- //recom_number_box -->
+                    </div>
+                    <!-- //recom_item_cont -->
+                  </dd>
+                </dl>
+              </div>
+
+              <!-- //recom_box -->
+
+              <div class="recent_box">
+                <dl class="js_recent_area">
+                  <dt>최근검색어</dt>
+                  <dd>최근 검색어가 없습니다.</dd>
+                </dl>
+              </div>
+              <!-- //recent_box -->
+              <div class="seach_top_all">
+                <button type="button" class="btn_top_search_close">
+                  <strong>닫기</strong>
+                </button>
+              </div>
+              <!-- //seach_top_all -->
+            </div>
+            <!-- //search_cont -->
+          </div>
+          <!-- //top_search_cont -->
+        </fieldset>
+      </form>
+    </div>
+    <!-- //top_search -->
+    <!-- 검색 폼 -->
+  </div>
+  <!-- //header_search_cont -->
+</div>
+
+<div class="search_form_box">
+  <span class="sch_inner_wrap">
+    <input type="text" placeholder="검색어를 입력하세요" />
+  </span>
+  <span class="sch_inner_btn_wrap">
+    <input type="image" src="../img/Search_icon.png" alt="검색" />
+  </span>
+</div>
+
+<li
+  class="tb_mw_wrap"
+  id="gliid12286"
+  data-company="(주)트루라이프_위탁"
+  data-category="도시락&amp;샐러드"
+  data-price="24500"
+>
+  <!--20200206 인기상품 리스트 클래스 변경2-->ㅁ
+  <!-- 201210 -->
+  <div class="ico_t_cart_c" style="cursor: pointer">
+    <a id="icolcart12286" data-gidx="12286"
+      ><img src="/img/ico/ico_t_cart.png" />
+    </a>
+  </div>
+  <a
+    href="/goods/view.asp?g=12286"
+    onclick="hitRecentLog('12286');ProductClick(12286,1);"
+  >
+  </a>
+  <div class="prod_zzim_img_c tb_mw">
+    <a
+      href="/goods/view.asp?g=12286"
+      onclick="hitRecentLog('12286');ProductClick(12286,1);"
+      ><!--20200206 인기상품 리스트 클래스 변경3--><!-- 201210 -->
+      <div class="ico_issue2_left">
+        <img
+          src="https://data.0app0.com/diet/shop/shop_icon/20210510135022_6347536687.png"
+        />
+      </div>
+      <p class="bestsn_n_img tb_mw">
+        <!--20200206 인기상품 리스트 클래스 변경4-->
+        <img
+          src="https://data.0app0.com/diet/shop/goods/20211007/w_20211007153748_9434513669.jpg"
+          class="tb_m"
+        /></p
+    ></a>
+    <div class="ico_zzim" style="display: block">
+      <a
+        href="/goods/view.asp?g=12286"
+        onclick="hitRecentLog('12286');ProductClick(12286,1);"
+      >
+      </a>
+      <div class="btn_zzim_sty">
+        <a
+          href="/goods/view.asp?g=12286"
+          onclick="hitRecentLog('12286');ProductClick(12286,1);"
+        >
+        </a
+        ><a
+          class="btn_zzim_check act_zzim"
+          id="ico_keep_12286"
+          onclick="sns_keep_change3('12286');"
+          ><span class="blind">찜하기</span></a
+        >
+      </div>
+    </div>
+    <p></p>
+
+    <div class="best_n_box">
+      <span class="bestsn_n_t_w noto_sans" id="GoodsTitle12286"
+        >[5+1] 한스푼 샐러드 도시락 8종</span
+      ><!--20200206 인기상품 리스트 타이틀 클래스명 변경-->
+      <!--20200206 상품금액 변경-->
+      <p class="best_n_price_w noto_sans">
+        <span class="best_n_list_dc"
+          ><span class="blind">할인가</span>24,500원</span
+        >
+
+        <span class="best_n_per_price"
+          ><span class="blind">정가</span>30,500원</span
+        >
+
+        <span class="best_n_sale"
+          ><span class="blind">할인율</span>20<em>%</em></span
+        >
+      </p>
+      <!--//20200206 상품금액 변경-->
+
+      <!--20200206 인기상품 리스트 텍스트 2줄로 변경-->
+      <p class="best_n_txt_w noto_sans">
+        <span class="best_n_txt"
+          >*새벽배송* 탄단지 균형있는 영양을 갖춘 프리미엄 도시락</span
+        >
+      </p>
+      <!--//20200206 인기상품 리스트 텍스트 2줄로 변경-->
+
+      <!--20200206 리뷰영역 변경-->
+      <p class="best_n_reviw_w">
+        <span class="b_n_reviw noto_sans fs105e mt5">리뷰:</span>
+        <span class="b_n_reviw_num noto_sans mt5">19,723</span>
+
+        <!--20210511 다신배송외 UI 변경 배송아이콘 영역-->
+        <span class="ico_n_dab_w">
+          <span class="ico_freebaes">무료배송</span>
+        </span>
+        <!--20210511 다신배송외 UI 변경 배송아이콘 영역-->
+      </p>
+      <!--//20200206 리뷰영역 변경-->
+    </div>
+  </div>
+</li>
