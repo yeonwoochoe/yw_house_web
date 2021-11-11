@@ -1,0 +1,5 @@
+# .gitignore
+
+# **/.DS_Store
+# **/fontAwesome/
+# ./git-clone/b_practice/b_step_03/js/test/a.js
