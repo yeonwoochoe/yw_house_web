@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* a_base.css */
+/* css 변수할당 */
+/* common-layout */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* design */
+#wrap {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  background-color: #ddd;
+}
+
+/* #headBox --------------------------------------------*/
+/* #viewBox --------------------------------------------*/
+/* #serchPdBox------------------------------------------*/
+/* #bestPdBox-------------------------------------------*/
+/* #brandAboutBox---------------------------------------*/
+/* #rivewPdBox------------------------------------------*/
+/* #infoBox---------------------------------------------*/
+/* #footBox---------------------------------------------*/
+
+/*# sourceMappingURL=a_base.css.map */

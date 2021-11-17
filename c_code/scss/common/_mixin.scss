@@ -1,0 +1,17 @@
+
+  
+  $url:"../../img/bgIcon/";
+  $baseSize:16;
+
+@mixin full(){
+  display: block; width: 100%; height: 100%;
+}// @mixin full();
+
+@mixin bgImg($i, $r:no-repeat, $p:50% 50%, $z:initial) {
+  background : {
+    image:url(#{$url}#{$i});
+    repeat:$r;
+    position: $p;
+    size: $z;
+  }  
+}

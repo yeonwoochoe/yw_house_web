@@ -1,0 +1,636 @@
+<div class="content-inner">
+  <h3 class="offscreen">나만을 위한</h3>
+  <p class="tt-desc">고객님께 딱 맞는 제품을 추천하기 위해 다음 항목을 체크해주세요.</p>
+
+  <ul class="fit-question-list">
+    <!-- s: check 01 -->
+    <li class="item">
+      <div class="question-chk-wrap">
+        <div class="q-no">check 01</div>
+        <div class="q-tit">성별과 연령을 알려주세요</div>
+        <ul class="chk-box-list gender">
+          <li class="q-item">
+            <!-- s: 질문 선택 박스 -->
+            <div class="q-chk-box">
+              <input type="radio" id="female" name="gender" value="AF">
+              <label class="box" for="female">
+                <span class="text ico-qw">여성</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item ">
+            <div class="q-chk-box">
+              <input type="radio" id="male" name="gender" value="AM">
+              <label class="box" for="male">
+                <span class="text ico-qm">남성</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <ul class="chk-box-list n5 age">
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="age1" name="age" value="A1">
+              <label class="box" for="age1">
+                <span class="text ico-qw">10대<span class="ico ico-age-down"><span class="offscreen">이하</span></span></span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="age2" name="age" value="A2">
+              <label class="box" for="age2">
+                <span class="text ico-qw">20대</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="age3" name="age" value="A3">
+              <label class="box" for="age3">
+                <span class="text ico-qw">30대</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="age4" name="age" value="A4">
+              <label class="box" for="age4">
+                <span class="text ico-qw">40대</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="age5" name="age" value="A5">
+              <label class="box" for="age5">
+                <span class="text ico-qw">50대<span class="ico ico-age-up"><span class="offscreen">이상</span></span></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <!-- s: check 01 -->
+
+    <!-- s: check 02 -->
+    <li class="item">
+      <div class="question-chk-wrap">
+        <div class="q-no">check 02</div>
+        <div class="q-tit">녹즙의 <span class="fw-bold">쓴맛</span> 어떠세요?</div>
+        <ul class="chk-box-list">
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="flavor1" name="flavor" value="A21">
+              <label class="box" for="flavor1">
+                <span class="text">쓴맛이 나야 녹즙이죠! </span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="radio" id="flavor2" name="flavor" value="A22">
+              <label class="box" for="flavor2">
+                <span class="text">몸에 좋아도 쓰진 않았으면<br> 좋겠어요</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <!-- s: check 02 -->
+
+    <!-- s: check 03 -->
+    <li class="item">
+      <div class="question-chk-wrap">
+        <div class="q-no">check 03</div>
+        <div class="q-tit">녹즙을 드시는 <span class="fw-bold">목적</span>이 어떻게 되세요?</div>
+        <!--
+          :: DESC :: 체크박스 리스트 배열 클래스 지정 설명
+          1) 기본 3의 배수
+          2) 5의 배수 : [chk-box-list] 리스트에 [n5] 추가
+        -->
+        <ul class="chk-box-list n5">
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="purpose1" name="purpose" value="A31">
+              <label class="box" for="purpose1">
+                <span class="text">식사 대용</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="purpose2" name="purpose" value="A32">
+              <label class="box" for="purpose2">
+                <span class="text">야채 섭취</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="purpose3" name="purpose" value="A33">
+              <label class="box" for="purpose3">
+                <span class="text">순수 녹즙</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="purpose4" name="purpose" value="A34">
+              <label class="box" for="purpose4">
+                <span class="box-inner">
+                  <span class="text">유산균 섭취</span>
+                </span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="purpose5" name="purpose" value="A35">
+              <label class="box" for="purpose5">
+                <span class="text">식이섬유 섭취</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <!-- s: check 03 -->
+
+    <!-- s: check 04 -->
+    <li class="item">
+      <div class="question-chk-wrap">
+        <div class="q-no">check 04</div>
+        <div class="q-tit"><span class="fw-bold">생활패턴</span>을 알려주세요</div>
+        <ul class="chk-box-list">
+          <li class="q-item">
+            <!-- s: 질문 선택 박스 -->
+            <div class="q-chk-box">
+              <input type="checkbox" id="pattern1" name="pattern" value="A41">
+              <label class="box" for="pattern1">
+                <span class="text">야외 활동이 많아요</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="pattern2" name="pattern" value="A42">
+              <label class="box" for="pattern2">
+                <span class="box-inner">
+                  <span class="text">주로 앉아서 일해요</span>
+                </span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="pattern3" name="pattern" value="A43">
+              <label class="box" for="pattern3">
+                <span class="text">나는 육식덕후</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="pattern4" name="pattern" value="A44">
+              <label class="box" for="pattern4">
+                <span class="text">야근이 많아요</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="pattern5" name="pattern" value="A45">
+              <label class="box" for="pattern5">
+                <span class="text">아침을 못챙겨요</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <!-- s: check 04 -->
+
+    <!-- s: check 05 -->
+    <li class="item">
+      <div class="question-chk-wrap type1">
+        <div class="q-no">check 05</div>
+        <div class="q-tit">보충하고 싶은 <span class="fw-bold">성분</span>을 골라주세요</div>
+        <ul class="chk-box-list n5">
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="ingredient1" name="ingredient" value="A51">
+              <label class="box" for="ingredient1">
+                <span class="text">비타민<br>A, B, C, D</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="ingredient2" name="ingredient" value="A52">
+              <label class="box" for="ingredient2">
+                <span class="box-inner">
+                  <span class="text">칼슘</span>
+                </span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="ingredient3" name="ingredient" value="A53">
+              <label class="box" for="ingredient3">
+                <span class="text">식이섬유</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="ingredient4" name="ingredient" value="A54">
+              <label class="box" for="ingredient4">
+                <span class="text">엽산, 철분</span>
+              </label>
+            </div>
+          </li>
+          <li class="q-item">
+            <div class="q-chk-box">
+              <input type="checkbox" id="ingredient5" name="ingredient" value="A55">
+              <label class="box" for="ingredient5">
+                <span class="text">단백질</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <!-- s: check 04 -->
+  </ul>
+  <div class="btn-wrap ac">
+    <a href="javascript:void(0);" class="btn-lg black" onclick="javascript:forMeResult();">결과보기</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="searchFormBox">
+  <div class="question_area">
+    <div class="q_main_title">
+      <h2>나한테 맞는 포르미 도시락은?</h2>
+      <p>고객님께 딱 맞는 맞춤형 도시락을<br>
+      추천하기 위해 다음 항목을 체크해주세요!</p>
+    </div>
+      <ul class="question-list">
+        <!-- s: check 01 -->
+        <li class="item">
+          <div class="question-chk-wrap">
+            <div class="q-no">check 01</div>
+            <h3>성별과 연령을 알려주세요&#33;</h3>
+            <ul class="chk-box-list gender">
+              <li class="q-item">
+                <!-- s: 질문 선택 박스 -->
+                <div class="q-chk-box">
+                  <input type="radio" id="female" name="gender" value="AF">
+                  <label class="box" for="female">
+                    <span class="text ico-qw">여성</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item ">
+                <div class="q-chk-box">
+                  <input type="radio" id="male" name="gender" value="AM">
+                  <label class="box" for="male">
+                    <span class="text ico-qm">남성</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <ul class="chk-box-list n5 age">
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="age1" name="age" value="A1">
+                  <label class="box" for="age1">
+                    <span class="text ico-qw">10대<span class="ico ico-age-down"><span class="offscreen">이하</span></span></span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="age2" name="age" value="A2">
+                  <label class="box" for="age2">
+                    <span class="text ico-qw">20대</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="age3" name="age" value="A3">
+                  <label class="box" for="age3">
+                    <span class="text ico-qw">30대</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="age4" name="age" value="A4">
+                  <label class="box" for="age4">
+                    <span class="text ico-qw">40대</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="age5" name="age" value="A5">
+                  <label class="box" for="age5">
+                    <span class="text ico-qw">50대<span class="ico ico-age-up"><span class="offscreen">이상</span></span></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- s: check 01 -->
+    
+
+
+
+
+        <!-- s: check 02 -->
+        <li class="item">
+          <div class="question-chk-wrap">
+            <div class="q-no">check 02</div>
+            <h3>녹즙의 <span class="fw-bold">쓴맛</span> 어떠세요?</h3>
+            <ul class="chk-box-list">
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="flavor1" name="flavor" value="A21">
+                  <label class="box" for="flavor1">
+                    <span class="text">쓴맛이 나야 녹즙이죠! </span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="radio" id="flavor2" name="flavor" value="A22">
+                  <label class="box" for="flavor2">
+                    <span class="text">몸에 좋아도 쓰진 않았으면<br> 좋겠어요</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- s: check 02 -->
+    
+
+
+
+        <!-- s: check 03 -->
+        <li class="item">
+          <div class="question-chk-wrap">
+            <div class="q-no">check 03</div>
+            <h3>녹즙을 드시는 <span class="fw-bold">목적</span>이 어떻게 되세요?</h3>
+            <!--
+              :: DESC :: 체크박스 리스트 배열 클래스 지정 설명
+              1) 기본 3의 배수
+              2) 5의 배수 : [chk-box-list] 리스트에 [n5] 추가
+            -->
+            <ul class="chk-box-list n5">
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="checkbox" id="purpose1" name="purpose" value="A31">
+                  <label class="box" for="purpose1">
+                    <span class="text">식사 대용</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="checkbox" id="purpose2" name="purpose" value="A32">
+                  <label class="box" for="purpose2">
+                    <span class="text">야채 섭취</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="checkbox" id="purpose3" name="purpose" value="A33">
+                  <label class="box" for="purpose3">
+                    <span class="text">순수 녹즙</span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="checkbox" id="purpose4" name="purpose" value="A34">
+                  <label class="box" for="purpose4">
+                    <span class="box-inner">
+                      <span class="text">유산균 섭취</span>
+                    </span>
+                  </label>
+                </div>
+              </li>
+              <li class="q-item">
+                <div class="q-chk-box">
+                  <input type="checkbox" id="purpose5" name="purpose" value="A35">
+                  <label class="box" for="purpose5">
+                    <span class="text">식이섬유 섭취</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- s: check 03 -->
+    
+
+
+
+
+
+
+
+
+
+
+
+  </div><!-- question_area -->
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#searchFormBox {
+  width: 100%; height: 2000px; margin-top: -50px; 
+background-color: #009;}
+
+.question_area { width: 960px; height: 100%;
+  margin: auto; padding-top: 200px;}
+
+.q_main_title {text-align: center; color: #fff; margin-bottom: 50px;}
+.question_area h2 {margin-bottom: 20px;font-size: 3rem;}
+.question_area p {text-align: center; font-size: 1.375rem; font-weight: 400;}
+
+
+.question_list {width: 100%; height: auto; background-color: #dfd; text-align: center;}
+
+.item {width: 100%; height: auto; min-height: 400px; background-color: #34d; border: 1px solid #fff;}
+.question-chk-wrap {width: 100%; height: 100%; background-color: #234;}
+.q-no {margin-bottom: 10px;  font-size: 1.375rem; font-weight: 700; 
+      text-transform: uppercase; color: #FFD800; }
+h3   {font-size: 1.375rem; font-weight: 400; color: #fff;}
+
+.chk-box-list {width: 100%; height: 300px;}
+.item {width: 100%; height: 100%; background-color: #545;} 
+.q-item { float: left;
+  width:150px; height: 150px;}
+
+
+
+
+
+
+
+  <section id="searchFormBox">
+    <div class="question_area">
+      <div class="q_main_title">
+        <h2>나한테 맞는 포르미 도시락은?</h2>
+        <p>고객님께 딱 맞는 맞춤형 도시락을<br>
+        추천하기 위해 다음 항목을 체크해주세요!</p>
+      </div>
+        <ul class="question_list">
+          <!-- s: check 01 -->
+          <li class="item">
+            <div class="question-chk-wrap">
+              <div class="q-no">check 01</div>
+              <h3>성별과 연령을 알려주세요&#33;</h3>
+              <ul class="chk-box-list gender">
+                <li class="q-item">
+                  <!-- s: 질문 선택 박스 -->
+                  <div class="q-chk-box">
+                    <input type="radio" id="female" name="gender" value="AF">
+                    <label class="box" for="female">
+                      <span class="text ico-qw">여성</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="q-item ">
+                  <div class="q-chk-box">
+                    <input type="radio" id="male" name="gender" value="AM">
+                    <label class="box" for="male">
+                      <span class="text ico-qm">남성</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <ul class="chk-box-list n5 age">
+                <li class="q-item">
+                  <div class="q-chk-box">
+                    <input type="radio" id="age1" name="age" value="A1">
+                    <label class="box" for="age1">
+                      <span class="text ico-qw">10대<span class="ico ico-age-down"><span class="offscreen">이하</span></span></span>
+                    </label>
+                  </div>
+                </li>
+                <li class="q-item">
+                  <div class="q-chk-box">
+                    <input type="radio" id="age2" name="age" value="A2">
+                    <label class="box" for="age2">
+                      <span class="text ico-qw">20대</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="q-item">
+                  <div class="q-chk-box">
+                    <input type="radio" id="age3" name="age" value="A3">
+                    <label class="box" for="age3">
+                      <span class="text ico-qw">30대</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="q-item">
+                  <div class="q-chk-box">
+                    <input type="radio" id="age4" name="age" value="A4">
+                    <label class="box" for="age4">
+                      <span class="text ico-qw">40대</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="q-item">
+                  <div class="q-chk-box">
+                    <input type="radio" id="age5" name="age" value="A5">
+                    <label class="box" for="age5">
+                      <span class="text ico-qw">50대<span class="ico ico-age-up"><span class="offscreen">이상</span></span></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- s: check 01 -->
+      
+
+
+
+
+
+
+
+
+
+
+    </div><!-- question_area -->
+
+
+
+  </section>
+  <!-- #searchFormBox-->
+
+

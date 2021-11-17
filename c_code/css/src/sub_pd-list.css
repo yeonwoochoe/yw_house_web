@@ -1,0 +1,803 @@
+@charset "UTF-8";
+/* main_v1.css */
+body {
+  --color-gray1: #c4c4c4;
+  --color-sample1: rgba(20, 100, 255, 0.15);
+}
+
+/* main_common.css */
+/* design */
+#wrap {
+  width: 1440px;
+  height: auto;
+  padding-top: 100px;
+}
+
+/* #headBox ============================================================ */
+.head_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+#headBox {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding-top: 50px;
+  box-sizing: content-box;
+} /* headBox 상단의 공간을 만들기위해 */
+
+#mid_header {
+  width: 100%;
+  height: 100px;
+  padding: 20px 40px 20px 60px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  float: left;
+  width: 193px;
+  height: 64px;
+  background-color: #333;
+}
+
+h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 64px;
+}
+
+.midheader_wrap {
+  width: 1440px;
+  height: 100px;
+  margin: auto;
+}
+
+.mid_navigation {
+  float: left;
+  width: 530px;
+  height: 30px;
+  margin: 30px 80px 0px 220px;
+}
+
+.mid_navigation .gnb {
+  width: auto;
+  height: 100%;
+}
+
+.gnb li {
+  float: left;
+  width: auto;
+  height: 100%;
+  margin-left: 20px;
+  box-sizing: border-box;
+  color: #444;
+  text-align: center;
+}
+
+.search_form_box {
+  float: right;
+  width: 300px;
+  height: 40px;
+  margin-top: 15px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.sch_inner_wrap {
+  display: inline-block;
+  height: 20px;
+  margin: 0;
+  width: 200px;
+  height: 100%;
+}
+
+.sch_inner_wrap input {width: 240px; height: 30px;
+background-color: transparent;}
+
+fieldset {width: 100%; height: 100%;}
+
+
+.sch_inner_btn_wrap {
+  float: right;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../img/Search_icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: initial;
+}
+
+
+
+/* top_navigation -----------------------------------------------------*/
+
+.top_nav_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1440px;
+  height: auto;
+}
+
+#top_navigation {
+  /* 내용을 강제로 상단으로 끌어올림 ^^ 요롷게요~~ */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px 70px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  background-color: rgb(226, 226, 226);
+}
+
+.support_unb {
+  float: left;
+  width: 430px;
+  height: 30px;
+}
+
+.support_area {
+  width: 100%;
+  height: 100%;
+}
+
+.support_area li {
+  float: left;
+  width: auto;
+  height: 100%;
+  margin-right: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.user_nav {
+  float: right;
+  width: 310px;
+  height: 30px;
+}
+
+.user_area {
+  width: 100%;
+  height: 100%;
+}
+
+.user_area li {
+  width: auto;
+  height: 100%;
+  line-height: 30px;
+  float: left;
+  margin-left: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* #viewBox ============================================================*/
+
+#viewBox {
+  width: 100%;
+  height: 500px;
+  margin-top: -50px;
+  background-color: #eee;
+}
+
+.slide_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.view_area {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-attachment: fixed;
+
+}
+.view_area::before{
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
+}
+
+
+
+.view_title {
+  position: relative;
+  width: 100%; height: 100%;
+text-align: center; padding-top: 160px;
+color: #fff;
+}
+
+.view_title span {    
+  display: block;
+  color: #99c440;
+   font-size: 1.625rem;}
+
+  .view_title h3{font-size: 48px;
+    margin-bottom: 15px;}
+
+    .view_title h4{font-size: 24px;
+      margin-bottom: 15px;}
+
+
+
+
+/* #mainPdBox ============================================================ */
+
+#mainPdBox {
+  width: 100%;
+  height: 1800px;
+  padding: 80px 0;
+  background-color: #333;
+}
+
+.main_pd_wrap {
+  width: 1100px;
+  height: 440px;
+  margin: auto;
+  margin-top: 120px;
+  background-color: #333;
+}
+
+.second {margin-bottom: 160px;}
+
+#mainPdBox > .main_title {
+  width: 100%;
+  height: auto;
+  margin-bottom: 180px;
+}
+
+#mainPdBox .icon {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+#mainPdBox h2 {
+  width: 100%; height: auto;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+
+.tab_title_area {
+  /* float: left; */
+  width: 600px;
+  height: 60px;
+  margin: auto;
+}
+
+.tab_title_area > ul {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.tab_title_area li {
+  float: left;
+  width: 200px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+
+.tab_title_area li:nth-child(1) {border-radius: 5px 0 0 5px;
+}
+
+.tab_title_area li:nth-child(3) {border-radius: 0 5px 5px 0;}
+  
+  
+
+
+.tab_title_area li:hover{background-color: #70A103;}
+
+.tab_title_area li:hover button{ color: #fff;}
+
+.tab_title_area li.action {background-color:  #70A103;}
+.tab_title_area li.action button {color: #fff;}
+
+
+.tab_title_area button { width: 100%; height: 100%; 
+  font-size:1rem; font-weight: 700;}
+
+.tab_content_area {width: 100%; height: 100%;}
+
+.tab_content_area > div.action {display: block;}
+
+.tab_con_detail_01 {display: none;
+  width: 100%; height: 100%;
+  background-color: #040;}
+
+.tab_con_detail_02 {display: none;
+  width: 100%; height: 100%;
+  background-color: #333;}
+
+.tab_con_detail_03 {display: none;
+  width: 100%; height: 100%;
+  background-color: #040 }
+
+.main_conbox {
+  float: left;
+  width: 300px;
+  height: 440px;
+  padding: 10px;
+  margin-right: 100px;
+  background-color: #fff;
+}
+
+.main_conbox:last-child {
+  margin-right: 0;
+}
+
+.main_conbox .thumbnail {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 280px;
+  background-color: #444;
+}
+
+.thumbnail img {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.shop_bag_icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  /* background-image: url(../../img/shopping-bag.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.shop_bag_icon:hover {background-color: #70A103;}
+.shop_bag_icon img {transform: scale(0.7);}
+.shop_bag_icon img:hover {filter: brightness(100);}
+
+
+.description {
+  float: left;
+  width: 100%;
+  height: 160px;
+}
+
+.main_pd_name a {
+  display: block;
+  padding-top: 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.main_pd_name .sub_text {
+  font-size: 0.95rem;
+  padding-left: 0.2rem;
+  margin-top: 10px;
+}
+
+.main_pd_price {
+  margin-top: 20px;
+}
+
+.main_pd_p_dc {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: -0.05rem;
+}
+
+.main_pd_per_price {
+  display: inline-block;
+  margin: 3px 0px 0px 7px;
+  font-size: 1.05rem;
+  color: #bebebe;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.main_pd_sale_price {
+  float: right;
+  margin: 3px 4px 0px 0px;
+  text-align: right;
+  color: #f00;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: -0.05rem;
+}
+
+
+.pd_btn_wrap {
+  position:relative;
+  width: 300px; height: 60px;
+  margin: auto;}
+
+.pd_btn_wrap button {border: 0.2px solid #B1B1B1;}
+
+.next {float: right;
+  width: 60px; height: 60px;
+  background-color: #fff;
+  background-image: url(../../img/chevron-next.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.prev {
+  float: left;
+  width: 60px; height: 60px;
+  background-color: #fff;
+  background-image: url(../../img/chevron-prev.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+.page_counut { 
+  position: absolute;
+  top: 20px;
+  right:70px;
+  width: 150px; height: 40px;
+  margin: auto;}
+
+.page_counut li  { 
+  float: left;
+  width: 40px; height: 40px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 0.2px solid #B1B1B1;
+}
+.page_counut li:hover {background-color: #333;
+color: #fff;}
+.pd_btn_wrap button:hover {background-color: #ddd ;
+ }
+
+  .page_counut li:last-child {margin-right: 0;}
+  .page_counut li a {  display: block;
+    width: 100%; height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+
+
+/* #infoBox ============================================================ */
+#infoBox {
+  width: 100%; height: 623px;
+  padding: 160px 90px;  }
+
+
+.info_content_area_01 {
+  float: left; width: 650px; height: 300px;
+  margin-right: 39px; padding: 40px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #fff;}
+
+.info_content_area_01 h3 {
+  width: 100%; height: auto; margin-bottom: 20px;
+  text-transform: uppercase; text-align: center;
+  font-size: 1.125rem; font-weight: 400; color: #333;}
+
+.cs_center {
+  float: left; width: 300px; height: 100%; 
+  margin: auto;
+  text-align: center;
+  background-color: #fff;}
+
+.cs_center .cs_number {
+  display: block;
+  font-size: 2.25rem; font-weight: 700; color: #70A103;
+  margin-bottom: 20px;}
+
+.all_sub
+  {width: 100%; height: auto; font-size: 18px; font-weight: 400;}
+  .all_sub p {margin-bottom: 5px;}
+
+.bank_account {
+  float: left; width: 300px; height: 100%;
+  margin: auto;
+  text-align: center;}
+
+.bank_account .bank_forme{
+  display: block;
+  width: 100%; height: 48px;
+  margin-bottom: 20px; padding-top: 4px;
+  font-size: 1.9rem; font-weight: 700; color: #70A103;}
+
+
+
+.info_content_area_02 {
+  position: relative;
+  float: left;
+  width: 277px; height: 300px;
+  margin-right: 15px; padding: 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.notice {
+  width: 100%; height: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.info_con_part {
+  width: 100%; height: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.info_btn {
+  width: 160px;  height: 43px;
+  margin: auto;
+  color: #fff;
+  font-size: 0.85rem;
+  background-color: #333;
+  text-align: center;
+  line-height: 43px;
+}
+
+.info_btn a::after {
+  content: "";
+  display: inline-block; /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
+  width: 20px;
+  height: 20px;
+  transform: translateX(8px);
+  vertical-align: middle;
+  background-image: url("../../img/bi_box-arrow-up-right.svg");
+  background-repeat: no-repeat;}
+
+.info_content_area_02 li {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  position: relative;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info_content_area_03 {
+  float: left;
+  position: relative;
+  padding: 30px;
+  width: 277px;
+  height: 300px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.faq {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.info_content_area_03 li {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  position: relative;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* #footBox ============================================================*/
+
+#footBox {
+  width: 100%;
+  height: 240px;
+  background-color: #444;
+}
+
+.footbox_wrapper {
+  width: 100%;
+  height: 240px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.footbox_area_01 {
+  float: left;
+  /* padding: 40px; */
+  padding-right: 0;
+  width: 900px;
+  height: 160px;
+}
+
+address {
+  float: left;
+  /* width: 100%; */
+  height: auto;
+  font-weight: 100;
+  color: #fff;
+}
+
+.footbox_area_02 {
+  /* float: left; */
+  float: right;
+  width: 400px;
+  height: 160px;
+  /* padding: 40px; */
+  /* padding-left: 0; */
+}
+
+.membership_btn {
+  /* width: 400px; */
+  /* width: 100%; */
+  height: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0;
+  background-color: #eee;
+}
+
+.membership_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+}
+
+.membership_btn span {
+  margin-left: 10px;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.membership_btn span::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  border-top: 1px solid #333;
+  margin: 3px 6px;
+}
+
+.sns_btn {
+  float: left;
+  margin-top: 20px;
+  margin-left: 200px;
+  width: 180px;
+  height: 50px;
+}
+
+.sns_btn ul {
+  width: auto;
+  height: 100%;
+}
+
+.sns_btn li {
+  float: left;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.sns_btn li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.footbox_area_03 {
+  /* float: left; */
+  clear: both;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  height: 40px;
+  background-color: #555;
+}
+
+.foot_info {
+  width: 750px;
+  height: 40px;
+  margin: auto;
+}
+
+.foot_info ul {
+  width: 100%;
+  height: 40px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.foot_info li {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+  /* padding: 0 10px; */
+}
+
+.foot_info li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 40px;
+}
+
+/* .foot_info li:after,
+.foot_info li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  bottom: 0;
+  width: 1px;
+  height: 8px;
+  margin: auto 30px;
+  background-color: #e4e8eb;
+} */
+
+.foot_info li:after,
+.foot_info li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  width: 1px;
+  height: 20%;
+  transform: translateY(-50%);
+  background-color: #fff9;
+}
+
+.foot_info li:last-child:after {
+  display: none;
+}
+/* --------------------------------------------------- */
+/*  */
+/**
+   * ? 내용을 설명
+   * ! 내용을 설명
+   * TODO: 내용을 설명
+  */

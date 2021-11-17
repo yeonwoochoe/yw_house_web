@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/* main_v1.css */
+body {
+  --color-gray1: #c4c4c4;
+  --color-sample1: rgba(20, 100, 255, 0.15);
+}
+
+/* main_common.css */
+/* design */
+#wrap {
+  width: 1440px;
+  height: auto;
+  padding-top: 100px;
+}
+
+/* #headBox ============================================================ */
+
+.head_wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+#headBox {
+  position: relative;
+  width: 100%; height: 100px;
+  padding-top: 50px;
+  box-sizing: content-box;
+} /* headBox 상단의 공간을 만들기위해 */
+
+#mid_header {
+  width: 100%; height: 100px;
+  padding: 20px 40px 20px 60px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);}
+
+h1 {
+  float: left;
+  width: 193px; height: 64px;
+  background-color: #333;}
+
+h1 a {
+  display: block;
+  width: 100%;  height: 100%;
+  color: #fff; text-align: center; line-height: 64px;}
+
+.midheader_wrap {
+  width: 1440px; height: 100px;  margin: auto;}
+
+.mid_navigation {
+  float: left;
+  width: 530px;  height: 30px;
+  margin: 30px 80px 0px 220px;}
+
+.mid_navigation .gnb {width: auto;height: 100%;}
+
+.gnb li {
+  float: left;
+  width: auto; height: 100%;
+  margin-left: 20px;
+  box-sizing: border-box;
+  color: #444; text-align: center;}
+
+.search_form_box {
+  float: right;
+  width: 300px;  height: 40px;
+  margin-top: 15px; padding: 5px 8px;
+  border: 1px solid #ddd; border-radius: 5px;
+  background-color: #fff;}
+
+.sch_inner_wrap {
+  display: inline-block;
+  height: 20px;
+  margin: 0;
+  width: 200px;
+  height: 100%;
+}
+
+.sch_inner_wrap input {width: 240px; height: 30px;
+background-color: transparent;}
+
+fieldset {width: 100%; height: 100%;}
+
+
+.sch_inner_btn_wrap {
+  float: right;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../img/Search_icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: initial;
+}
+
+
+
+
+/* top_navigation -----------------------------------------------------*/
+
+.top_nav_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1440px;
+  height: auto;
+}
+
+#top_navigation {
+  /* 내용을 강제로 상단으로 끌어올림 ^^ 요롷게요~~ */
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 50px;
+  padding: 10px 70px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  background-color: rgb(226, 226, 226);}
+
+.support_unb {
+  float: left; width: 430px; height: 30px;}
+
+.support_area { width: 100%; height: 100%;}
+
+.support_area li {
+  float: left;
+  width: auto; height: 100%;
+  margin-right: 20px; box-sizing: border-box;
+  text-align: center;  text-transform: uppercase; line-height: 30px;}
+
+.user_nav { float: right; width: 310px; height: 30px;}
+
+.user_area {width: 100%;height: 100%;}
+
+.user_area li {  float: left;
+width: auto; height: 100%; margin-left: 20px;
+line-height: 30px; box-sizing: border-box; text-align: center;}
+
+
+
+/* #loginBox ============================================================*/
+
+#searchFormBox {
+  width: 100%; height: 2400px; margin-top: -50px; 
+background-image: url('../../img/user/bg_2.png');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: 50% -100px;
+}
+
+.question_area { width: 1200px; height: 100%;
+  margin:auto; padding-top: 200px;}
+
+.q_main_title {text-align: center; color: #fff; margin-bottom: 80px;}
+.question_area h2 {margin-bottom: 20px;font-size: 3rem;}
+.question_area p {text-align: center; font-size: 1.375rem; font-weight: 400;}
+
+
+.question-list {width: 100%; height: auto; 
+  margin-bottom: 180px; text-align: center;}
+.q-no {margin-bottom: 10px;  font-size: 1.375rem; font-weight: 700; 
+      text-transform: uppercase; color: #FFD800; }
+.question-list h3 {font-size: 30px; font-weight: 500; color: #fff;}
+
+  .q-item  {width: 100%; height: 280px; } 
+  .gender_wrap {width: 420px; height: auto; margin: auto;}
+  
+  .q-chk-box {
+    position: relative;
+    float: left; width: 200px; height: 200px;  
+    margin-right: 20px; margin-top: 40px;}
+
+    .question-list input:focus + label {border: 3px solid rgb(255, 255, 255); }
+
+    .q-chk-box:nth-child(2) {margin-right: 0;}
+    
+    .gender_box
+      {display: block;
+      width: 200px; height: 200px;
+      background-color: rgba(255, 255, 255, 0.2);
+      background-image: url('../../img/user/css_sprites.png');
+      background-repeat: no-repeat;
+      background-position: -500px -25px;
+      background-size:inherit;
+      border-radius: 100%;
+      border: 4px solid rgba(255, 255, 255, 0.7);}
+
+    .ma{background-position: -900px -25px;}
+  
+    .gender_box {padding-top: 120px; box-sizing: border-box;
+      color: #fff; font-size: 1.5rem;}
+
+      
+
+    .q-chk-box>input:checked + label{ background-color: rgb(255, 255, 255); 
+      background-position: -700px -25px;
+    color: #333; }
+
+    .q-chk-box>input:checked + .ma{ 
+      background-color: rgb(255, 255, 255);  background-position: -1100px -25px; }
+
+
+
+
+.qs-item{width: 960px; height: auto; margin: auto;  padding-top: 50px;}
+
+
+
+.qs_wrap {width: 930px; height: 100px; margin: auto; }
+.qs_con { float: left; width: 170px; height: 100px;  
+  margin-right: 20px;}
+
+
+.qs_wrap.pp {width: 1080px; height: 100px; margin: auto; }
+
+.qs_con.pp {width: 200px;  margin-right: 20px; }
+.qs_con:last-child {margin-right: 0;}
+
+.q_box {display: block; width: 100%; height: 100%;
+background-color: rgb(255, 255, 255,0.2); border-radius: 15px;
+border: 3px solid rgba(255, 255, 255, 0.5);
+color: #fff; font-size: 22px; font-weight: 700;
+line-height: 100px;
+}
+
+.qs_con>input:checked + label{ background-color: rgb(255, 255, 255); color: #333; 
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 20%);}
+
+
+.q_title {margin-bottom: 50px;}
+
+.qs_con.life {width: calc( (100% - 40px) / 3 );}
+
+.qs_wrap.pp {margin-bottom: 30px;}
+.pp2 .life {width: calc( (100% - 40px) /3 );}
+
+
+ .q_btn_wrap {width: 340px; height: 80px; margin: auto;  background-color: #333333;}
+ 
+  .q_btn_wrap button {width: 100%; height: 100%; 
+  line-height: 80px;font-size: 22px; font-weight: 700; color: #fff;}
+
+  .q_btn_wrap button:active{background-color: #fff ; color: #333333; }
+
+  .q_btn_wrap button:active span {display: inline-block ;
+    width: 30px; height: 30px;
+    background-image: url('../../img/check_black.svg');
+    background-repeat: no-repeat;
+    background-size:initial;
+    transform: translateX(-10px) translateY(6px);}
+
+
+.q_btn span {display: inline-block ;
+width: 30px; height: 30px;
+background-image: url('../../img/check.svg');
+background-repeat: no-repeat;
+background-size:initial;
+transform: translateX(-10px) translateY(6px);}
+
+
+
+
+
+  
+/* #infoBox ============================================================ */
+#infoBox {
+  width: 100%; height: 623px;
+  padding: 160px 90px;  }
+
+
+.info_content_area_01 {
+  float: left; width: 650px; height: 300px;
+  margin-right: 39px; padding: 40px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #fff;}
+
+.info_content_area_01 h3 {
+  width: 100%; height: auto; margin-bottom: 20px;
+  text-transform: uppercase; text-align: center;
+  font-size: 1.125rem; font-weight: 400; color: #333;}
+
+.cs_center {
+  float: left; width: 300px; height: 100%; 
+  margin: auto;
+  text-align: center;
+  background-color: #fff;}
+
+.cs_center .cs_number {
+  display: block;
+  font-size: 2.25rem; font-weight: 700; color: #70A103;
+  margin-bottom: 20px;}
+
+.all_sub
+  {width: 100%; height: auto; font-size: 18px; font-weight: 400;}
+  .all_sub p {margin-bottom: 5px;}
+
+.bank_account {
+  float: left; width: 300px; height: 100%;
+  margin: auto;
+  text-align: center;}
+
+.bank_account .bank_forme{
+  display: block;
+  width: 100%; height: 48px;
+  margin-bottom: 20px; padding-top: 4px;
+  font-size: 1.9rem; font-weight: 700; color: #70A103;}
+
+
+
+.info_content_area_02 {
+  position: relative;
+  float: left;
+  width: 277px; height: 300px;
+  margin-right: 15px; padding: 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.notice {
+  width: 100%; height: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.info_con_part {
+  width: 100%; height: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.info_btn {
+  width: 160px;  height: 43px;
+  margin: auto;
+  color: #fff;
+  font-size: 0.85rem;
+  background-color: #333;
+  text-align: center;
+  line-height: 43px;
+}
+
+.info_btn a::after {
+  content: "";
+  display: inline-block; /*i태그는 인라인 요소이기 때문에 블록처리해야함*/
+  width: 20px; height: 20px;
+  transform: translateX(8px);
+  vertical-align: middle;
+  background-image: url("../../img/bi_box-arrow-up-right.svg");
+  background-repeat: no-repeat;
+}
+
+
+.info_content_area_02 li {
+  overflow: hidden;
+  position: relative;
+  width: 100%; height: auto;
+  margin-top: 6px;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info_content_area_03 {
+  position: relative;
+  float: left;
+  width: 277px;  height: 300px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.faq {
+  width: 100%;  height: 50px;
+  font-size: 1.5rem; font-weight: 400;}
+
+.info_content_area_03 li {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  position: relative;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* #footBox ============================================================*/
+
+#footBox {
+  width: 100%;
+  height: 240px;
+  background-color: #444;
+}
+
+.footbox_wrapper {
+  width: 100%;
+  height: 240px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.footbox_area_01 {
+  float: left;
+  /* padding: 40px; */
+  padding-right: 0;
+  width: 900px;
+  height: 160px;
+}
+
+address {
+  float: left;
+  /* width: 100%; */
+  height: auto;
+  font-weight: 100;
+  color: #fff;
+}
+
+.footbox_area_02 {
+  /* float: left; */
+  float: right;
+  width: 400px;
+  height: 160px;
+  /* padding: 40px; */
+  /* padding-left: 0; */
+}
+
+.membership_btn {
+  /* width: 400px; */
+  /* width: 100%; */
+  height: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0;
+  background-color: #eee;
+}
+
+.membership_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+}
+
+.membership_btn span {
+  margin-left: 10px;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.membership_btn span::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  border-top: 1px solid #333;
+  margin: 3px 6px;
+}
+
+.sns_btn {
+  float: left;
+  margin-top: 20px;
+  margin-left: 200px;
+  width: 180px;
+  height: 50px;
+}
+
+.sns_btn ul {
+  width: auto;
+  height: 100%;
+}
+
+.sns_btn li {
+  float: left;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.sns_btn li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.footbox_area_03 {
+  /* float: left; */
+  clear: both;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  height: 40px;
+  background-color: #555;
+}
+
+.foot_info {
+  width: 750px;
+  height: 40px;
+  margin: auto;
+}
+
+.foot_info ul {
+  width: 100%;
+  height: 40px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.foot_info li {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+  /* padding: 0 10px; */
+}
+
+.foot_info li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 40px;
+}
+
+
+.foot_info li:after,
+.foot_info li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  width: 1px;
+  height: 20%;
+  transform: translateY(-50%);
+  background-color: #fff9;
+}
+
+.foot_info li:last-child:after {
+  display: none;
+}
