@@ -1,0 +1,152 @@
+// b_mob.scss
+/* b_mob.css */
+@import "../../common/mixin";
+
+/* (max-width:767px) / design 기준 : 320px */
+@media all and (max-width:767px) {
+
+
+
+
+/* #headBox --------------------------------------------*/
+// #headBox --------------------------------------------
+
+.head_wrapper {width: 100%; height: auto;}
+#headBox {width: 100%; height: 60px; background-color: #f66;}
+
+
+
+
+
+/* top_navigation */
+
+
+
+
+
+
+
+/* #viewBox --------------------------------------------*/
+// #viewBox --------------------------------------------
+
+
+
+#viewBox {
+  width: 100%; height: 250px;
+  margin-top: 60px;
+  background-color: #ddd;}
+
+
+
+
+
+
+
+
+
+
+/* #serchPdBox------------------------------------------*/
+// #serchPdBox------------------------------------------
+
+
+#serchPdBox {
+  width: 100%; height: 330px;
+  background-color: #F6FFE4;
+}
+
+
+
+
+
+
+
+
+
+/* #bestPdBox-------------------------------------------*/
+// #bestPdBox-------------------------------------------
+
+
+
+#bestPdBox {
+  width: 100%;height: 1550px;
+  padding: 80px 0; background-color: #F6FFE4;
+}
+
+
+
+
+
+
+
+
+
+
+/* #brandAboutBox---------------------------------------*/
+// #brandAboutBox---------------------------------------
+
+
+#brandAboutBox {
+  width: 100%; height: 350px;
+  background-color: #70A103;
+}
+
+
+
+
+
+
+
+
+
+
+/* #rivewPdBox------------------------------------------*/
+// #rivewPdBox------------------------------------------
+
+
+#rivewPdBox {
+  width: 100%; height: 630px;
+  background-color: #F6FFE4;
+  padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* #infoBox---------------------------------------------*/
+// #infoBox---------------------------------------------
+
+
+#infoBox {
+  width: 100%; height: 400px;
+  padding: 160px 90px;  background-color: #fdf;}
+
+
+
+
+
+
+
+
+
+
+
+/* #footBox---------------------------------------------*/
+// #footBox---------------------------------------------
+
+
+#footBox {
+  width: 100%; height: 320px;
+  background-color: #444;
+}
+
+
+
+
+}
+

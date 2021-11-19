@@ -1,0 +1,8 @@
+/* main_responsive.css */
+
+@import url("../src/main_rwd/a_base.css");
+@import url("../src/main_rwd/b_mob.css");
+@import url("../src/main_rwd/c_tab.css");
+@import url("../src/main_rwd/d_lab.css");
+@import url("../src/main_rwd/e_pc.css");
+@import url("../src/main_rwd/f_desk.css");
