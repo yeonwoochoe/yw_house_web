@@ -1,0 +1,62 @@
+
+[화이트 여자]
+.bg-female {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -16px -16px;
+}
+
+
+
+[블랙 여자]
+.bg-female_1 {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -148px -16px;
+}
+
+
+
+[화이트 남자]
+.bg-male {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -16px -148px;
+}
+
+
+[블랙남자]
+.bg-male_1 {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -148px -148px;
+}
+
+
+
+
+[화이트 다운]
+.bg-arrow_down {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -280px -16px;
+}
+
+
+
+[블랙다운 ]
+.bg-arrow_down_1 {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -280px -72px;
+}
+
+
+[화이트업 ]
+
+.bg-arrow_up {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -280px -128px;
+}
+
+
+
+[블랙업업 ]
+.bg-arrow_up_1 {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -280px -184px;
+}

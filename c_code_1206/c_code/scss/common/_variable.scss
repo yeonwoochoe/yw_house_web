@@ -1,0 +1,23 @@
+
+ /* css 변수할당 */
+
+
+
+// scss 변수 : 지정범위 내에서 선언
+// color-variable
+$white : #fff;
+$p-green : #70A103;
+$p-yellow : #FFD800;
+$a-green : (#F6FFE4, #99C440);
+$brown : #591902;
+$blue : #0375CD;
+$gray: (#F2F2F2, #B1B1B1, #505050); // list
+$black: (#333333, #171717 ); // list
+
+
+//dic(map)
+$psuedoCode: (
+  "hover": $p-green
+  ); // dic(map)
+
+// -------------------------
