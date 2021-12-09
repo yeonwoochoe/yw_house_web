@@ -1,0 +1,34 @@
+// main.scss
+/* main.css */
+
+@import "../common/variable";
+@import "../common/mixin";
+// --------------------------------
+  $headH:0;
+  $headH2:0;
+// --------------------------------
+
+#wrap {
+  width:100%;  
+  height:auto; min-height:800px;
+  background-color: #ddd;
+  @include mobile{ min-width:320px;  background-color: #fda; }
+  @include tablet{ background-color: #adf;  }
+  @include laptop{ background-color: #fdf;  }
+  @include pc{ background-color: #dfd; }
+}// #wrap 
+
+
+
+// -------------------------------------------
+  @import "../page/base/headBox";
+
+  @import "../page/main/viewBox";
+  @import "../page/main/serchPdBox";
+  @import "../page/main/bestPdBox";
+  @import "../page/main/brandAboutBox";
+  @import "../page/main/rivewPdBox";
+  @import "../page/main/infoBox";
+
+  @import "../page/base/footBox";
+// -------------------------------------------

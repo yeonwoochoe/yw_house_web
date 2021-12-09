@@ -1,0 +1,52 @@
+
+ /* css 변수할당 */
+
+
+
+// scss 변수 : 지정범위 내에서 선언
+// color-variable
+$color_white : #fff;
+$color_primary_01 : #70A103;
+$color_primary_02 : #FFD800;
+$color_accent_01 : (#F6FFE4, #99C440);
+$color_accent_02 : #591902;
+$color_accent_03 : #0375CD;
+$color_gray: (#F2F2F2, #B1B1B1, #505050); // list
+$color_black: (#333333, #171717 ); // list
+$color_gray_op: rgba(85,85,85,0.1);
+
+// font ===========================
+$font_family_en:"Roboto", "Noto Sans KR";
+$font_family_kr:"Noto Sans KR ", "sans-serif";
+$font_family_common:sans-serif;
+$font_weight_thin:100;
+$font_weight_normal:400;
+$font_weight_bold:700; 
+$font_weight: (100, 400, 500, 700);
+$font_size:(
+  title2:48px,title3:36px,title4:28px,point1:24px,
+  content1:22px, content2:18px, content3:16px, 
+  button1:14px,  button2:12px, caption:10px);
+
+// device size ================================
+$mobile : 320px;
+$tablet : 768px;
+$laptop : 1200px;
+$pc:1440px;
+// $pcfull : 1920px;
+
+
+
+
+
+
+
+
+
+
+//dic(map)
+$psuedoCode: (
+  "hover": $color_primary_01
+  ); // dic(map)
+
+// -------------------------

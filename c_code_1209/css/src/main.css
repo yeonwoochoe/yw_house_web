@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* main.css */
+/* css 변수할당 */
+#wrap {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  background-color: #ddd;
+}
+@media all and (max-width: 767px) {
+  #wrap {
+    min-width: 320px;
+    background-color: #fda;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  #wrap {
+    background-color: #adf;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1439px) {
+  #wrap {
+    background-color: #fdf;
+  }
+}
+@media all and (min-width: 1440px) {
+  #wrap {
+    background-color: #dfd;
+  }
+}
+
+.head_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+}
+#headBox {
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+h1 {
+  width: 120px;
+  height: 40px;
+  margin: auto;
+  background-color: #fdf;
+}
+@media all and (max-width: 767px) {
+  h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    margin: auto;
+  }
+}
+h1 > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+h1 > a > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+@media all and (max-width: 767px) {
+  h1 > a {
+    background-image: url(../../img/logo.png);
+  }
+}
+
+#headBox .navigation .btnBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+@media all and (max-width: 767px) {
+  #headBox .navigation .btnBox .mid_navi_btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fdf;
+  }
+  #headBox .navigation .btnBox .mid_navi_btn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/m_navigation.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  #headBox .navigation .btnBox .mid_navi_btn button > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@media all and (max-width: 767px) {
+  #headBox .navigation .btnBox .search_area {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fdf;
+    margin-left: 10px;
+  }
+  #headBox .navigation .btnBox .search_area button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/m_navigation.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  #headBox .navigation .btnBox .search_area button > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+.midheader_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  margin: auto;
+}
+#mid_header {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media all and (max-width: 767px) {
+  #mid_header {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1439px) {
+  #mid_header {
+    display: none;
+  }
+}
+@media all and (min-width: 1440px) {
+  #mid_header {
+    display: none;
+  }
+}
+
+.mid_navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  background-color: #fdf;
+}
+@media all and (max-width: 767px) {
+  .mid_navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .mid_navigation .gnb {
+    flex-direction: column;
+    height: auto;
+    background-color: #dfd;
+  }
+  .mid_navigation .gnb > li {
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    margin-right: 0;
+    padding: 8px;
+  }
+  .mid_navigation .gnb > li > a {
+    width: 100%;
+    min-height: 40px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.mid_navigation.gnb {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.mid_navigation.gnb > li {
+  position: relative;
+  width: auto;
+  margin-right: 16px;
+  color: #333333;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
